@@ -3,7 +3,7 @@
   "description": "Node.js example project",
   "memory": 128,
   "timeout": 5,
-  "role": "arn:aws:iam::293503197324:role/lambda",
+  "role": "arn:aws:iam::747527725996:role/lambda_role",
   "environment": {
     "LOGGLY_TOKEN": "123123123123"
   }
