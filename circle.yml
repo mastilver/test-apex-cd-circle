@@ -12,3 +12,5 @@ deployment:
     branch: master
     commands:
     - ~/apex deploy
+    environment:
+      - AWS_REGION: eu-west-1
