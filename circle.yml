@@ -1,0 +1,13 @@
+machine:
+  node:
+    version: 4
+
+dependencies:
+  pre:
+    - curl https://raw.githubusercontent.com/apex/apex/master/install.sh | sh
+
+deployment:
+  prod:
+    branch: master
+    commands:
+    - apex deploy
