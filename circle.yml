@@ -4,10 +4,10 @@ machine:
 
 dependencies:
   pre:
-    - sudo su - c "curl https://raw.githubusercontent.com/apex/apex/master/install.sh | sh"
+    - curl -sL https://github.com/apex/apex/releases/download/v0.6.1/apex_linux_amd64 -o ~/apex
 
 deployment:
   prod:
     branch: master
     commands:
-    - apex deploy
+    - ~/apex deploy
