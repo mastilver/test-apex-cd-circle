@@ -1,6 +1,8 @@
 machine:
   node:
     version: 4
+  environment:
+    AWS_REGION: eu-west-1
 
 dependencies:
   pre:
@@ -11,6 +13,4 @@ deployment:
   prod:
     branch: master
     commands:
-    - ~/apex deploy
-    environment:
-      - AWS_REGION: eu-west-1
+      - ~/apex deploy
